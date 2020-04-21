@@ -1,0 +1,25 @@
+{
+  "name": "clientapi",
+  "version": "1.0.0",
+  "description": "api para el proyecto de clientes",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "nicolasariza"
+  },
+  "author": "Nicolas Ariza",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.4.0",
+    "mongoose": "^5.9.10"
+  }
+}
