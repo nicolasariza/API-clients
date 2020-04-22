@@ -13,4 +13,7 @@ router.post(
   clienteController.crearCliente
 );
 
+// Obtener todos los proyectos
+router.get('/',auth,clienteController.obtenerClientes);
+
 module.exports = router;

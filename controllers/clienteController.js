@@ -38,3 +38,15 @@ exports.crearCliente = async (req, res) => {
     }
     
 }
+
+// Obtiene todos los clientes
+
+exports.obtenerClientes = async (req, res) => {
+    try {
+      const clientes = await Cliente.find()
+      res.json({ clientes });
+    } catch (error) {
+      console.log(error);
+      res.status(500).send("Hubo un error");
+    }
+  };
